@@ -54,6 +54,10 @@ git branch -M main
 git push -u origin main
 ```
 
+8 - Include the required information in `params.yaml` file
+
+9 - Create `get_data.py` in src folder -> `touch src/get_data.py`.
+
 Stages included in dvc.yaml file.
 
 ```bash
