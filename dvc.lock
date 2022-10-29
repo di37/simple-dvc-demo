@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/auto-mpg.csv
+      md5: abc5826ee9c1e7e40298e8c485d7c078
+      size: 18131
+    - path: src/get_data.py
+      md5: ee951fb1d9150ed70d9e7a060fe0dcf5
+      size: 750
+    - path: src/load_data.py
+      md5: f3ff90606109a4906616884f7feb754a
+      size: 570
+    outs:
+    - path: data/raw/auto-mpg.csv
+      md5: 3492db3fe29f9d2a2cccc563b65ea719
+      size: 19284

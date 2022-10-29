@@ -67,7 +67,7 @@ git push -u origin main
 
 12 - Done with coding part in `load_data.py`
 
-Stages included in dvc.yaml file.
+13 - Stages included in dvc.yaml file.
 
 ```bash
 dvc repro
