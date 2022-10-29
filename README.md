@@ -65,9 +65,9 @@ git push -u origin main
 
 11 - Create `load_data.py` in src folder -> `touch src/load_data.py`.
 
-12 - Done with coding part in `load_data.py`
+12 - Done with coding part in `load_data.py`.
 
-13 - Stages included in dvc.yaml file.
+13 - Stage 1 included in `dvc.yaml` file.
 
 ```bash
 dvc repro
