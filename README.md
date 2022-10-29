@@ -15,12 +15,14 @@ conda activate auto_mpg
 ```bash
 pip install --no-cache-dir -r requirements.txt
 ```
+
 4 - Create `template.py` file and execute.
 
 5 - Download the dataset from
 https://www.kaggle.com/datasets/uciml/autompg-dataset
 
 6 - Intialize git and dvc repositories.
+
 ```bash
 git init
 ```
@@ -30,6 +32,7 @@ dvc init
 ```
 
 7 - Adding the dataset file to staging area in dvc.
+
 ```bash
 dvc add data_given/auto-mpg.csv
 ```
@@ -57,6 +60,10 @@ git push -u origin main
 8 - Include the required information in `params.yaml` file
 
 9 - Create `get_data.py` in src folder -> `touch src/get_data.py`.
+
+10 - Included params and done with coding part in `get_data.py` followed by committing to github.
+
+11 - Create `get_data.py` in src folder -> `touch src/get_data.py`.
 
 Stages included in dvc.yaml file.
 
