@@ -1,0 +1,4 @@
+outs:
+- md5: abc5826ee9c1e7e40298e8c485d7c078
+  size: 18131
+  path: auto-mpg.csv
