@@ -1,6 +1,9 @@
 base:
   project: auto-mpg-project
   random_state: 42
+  sep: ','
+  encoding: 'utf-8'
+  index: False
   target_col: TARGET
 
 data_source:

@@ -7,12 +7,28 @@ stages:
       md5: abc5826ee9c1e7e40298e8c485d7c078
       size: 18131
     - path: src/get_data.py
-      md5: ee951fb1d9150ed70d9e7a060fe0dcf5
-      size: 750
+      md5: 7c06103ce707965470e409d6f19c22ba
+      size: 825
     - path: src/load_data.py
-      md5: f3ff90606109a4906616884f7feb754a
-      size: 570
+      md5: 8d0cd8fb317f1840753f11d637eaae51
+      size: 778
     outs:
     - path: data/raw/auto-mpg.csv
       md5: 3492db3fe29f9d2a2cccc563b65ea719
       size: 19284
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - path: data/raw/auto-mpg.csv
+      md5: 3492db3fe29f9d2a2cccc563b65ea719
+      size: 19284
+    - path: src/split_data.py
+      md5: dc7cc8b5933bd2d25c59e9bc7cee8731
+      size: 1185
+    outs:
+    - path: data/processed/test_auto-mpg.csv
+      md5: 895635b2e8f85460a95eaafb1e8a956d
+      size: 4102
+    - path: data/processed/train_auto-mpg.csv
+      md5: c0c09ecffc7d4389ed300fe6af6815b7
+      size: 15267

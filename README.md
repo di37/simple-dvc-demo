@@ -63,7 +63,7 @@ git push -u origin main
 
 10 - Included params and done with coding part in `get_data.py` followed by committing to github.
 
-11 - Create `get_data.py` in src folder -> `touch src/get_data.py`.
+11 - Create `load_data.py` in src folder -> `touch src/load_data.py`.
 
 12 - Done with coding part in `load_data.py`
 
@@ -80,3 +80,7 @@ pip install pathspec==0.9.0
 ```
 
 **Important:** Whenever making changes, always run dvc command before committing to Git otherwise error will be thrown.
+
+14 - Create `split_data.py` in src folder -> `touch src/split_data.py`.
+
+15 - Included stage 2 in `dvc.yaml` file.
