@@ -61,13 +61,9 @@ git push -u origin main
 
 9 - Create `get_data.py` in src folder -> `touch src/get_data.py`.
 
-10 - Included params and done with coding part in `get_data.py` followed by committing to github.
+10 - Create `load_data.py` in src folder -> `touch src/load_data.py`.
 
-11 - Create `load_data.py` in src folder -> `touch src/load_data.py`.
-
-12 - Done with coding part in `load_data.py`.
-
-13 - Stage 1 included in `dvc.yaml` file.
+11 - Stage 1 included in `dvc.yaml` file.
 
 ```bash
 dvc repro
@@ -81,8 +77,8 @@ pip install pathspec==0.9.0
 
 **Important:** Whenever making changes, always run dvc command before committing to Git otherwise error will be thrown.
 
-14 - Create `split_data.py` in src folder -> `touch src/split_data.py`.
+12 - Create `split_data.py` in src folder -> `touch src/split_data.py`.
 
-15 - Included stage 2 in `dvc.yaml` file.
+13 - Included stage 2 in `dvc.yaml` file.
 
-16 - Create `train_and_evaluate.py` in src folder -> `touch src/train_and_evaluate.py`.
+14 - Create `train_and_evaluate.py` in src folder -> `touch src/train_and_evaluate.py`.
