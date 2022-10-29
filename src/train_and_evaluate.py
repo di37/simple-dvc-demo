@@ -71,8 +71,8 @@ def train_and_evaluate(config_path: str):
 
     with open(params_file, "w") as f:
         params = {
-            "alpha": rmse,
-            "l1_ratio": mae,
+            "alpha": alpha,
+            "l1_ratio": l1_ratio,
         }
         json.dump(params, f, indent=indent_file)
 
