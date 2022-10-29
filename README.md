@@ -84,3 +84,5 @@ pip install pathspec==0.9.0
 14 - Create `split_data.py` in src folder -> `touch src/split_data.py`.
 
 15 - Included stage 2 in `dvc.yaml` file.
+
+16 - Create `train_and_evaluate.py` in src folder -> `touch src/train_and_evaluate.py`.

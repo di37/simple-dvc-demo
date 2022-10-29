@@ -4,7 +4,7 @@ base:
   sep: ','
   encoding: 'utf-8'
   index: False
-  target_col: TARGET
+  target_col: mpg
 
 data_source:
   s3_source: data_given/auto-mpg.csv
@@ -20,8 +20,16 @@ split_data:
 estimators:
   ElasticNet:
     params:
-      alpha: 0.88
-      l1_ratio: 0.89
+      alpha: 0.9
+      l1_ratio: 0.4
       # alpha: 0.9
       # l1_ratio: 0.4
-model_dir: saved_models
+
+reports:
+  params: report/params.json
+  scores: report/scores.json
+  indent: 4
+
+save_model:
+  model_dir: saved_models
+  model_name: model.joblib

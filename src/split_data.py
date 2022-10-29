@@ -23,6 +23,15 @@ def split_and_saved_data(config_path: str):
 
     df = pd.read_csv(raw_data_path, sep=sep)
     train, test = train_test_split(df, test_size=split_ratio, random_state=random_state)
+
+    ## Just for demonstration of this example project, we will not be
+    ## Preprocessing object datatype column. So we will just drop it.
+    train.drop(columns=["car_name"], inplace=True)
+    test.drop(columns=["car_name"], inplace=True)
+
+    train = train[~(train['horsepower'] == "?")]
+    test = test[~(test['horsepower'] == "?")]
+
     train.to_csv(train_data_path, index=index, encoding=encoding)
     test.to_csv(test_data_path, index=index, encoding=encoding)
 
