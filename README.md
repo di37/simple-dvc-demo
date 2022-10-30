@@ -174,3 +174,6 @@ python setup.py sdist bdist_wheel
 ## Creating ML Web App
 
 28 - Create `template_web_app.py` and execute.
+
+29 - Basic Web Structure is added in the created files. 
+
