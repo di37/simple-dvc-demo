@@ -148,20 +148,25 @@ tox
 ```
 
 23 - If `requirements.txt` file is updated.
+
 ```bash
 tox -r
 ```
 
 24 - Create file `setup.py` which will allow us to create custom package based on the folder name we pass as name parameter. Then we install our custom package.
+
 ```bash
-pip install -e . 
+pip install -e .
 ```
 
 Optional - To create a sharable distribution package.
+
 ```bash
 python setup.py sdist bdist_wheel
 ```
 
-25 - Certain cases are required to be handled. Therefore, `handle_cases.ipynb` is created. These all are solved at Exploratory Data Analysis stage. 
+25 - Certain cases are required to be handled. Therefore, `handle_cases.ipynb` is created. These all are solved at Exploratory Data Analysis stage.
 
-26 - In `test_config.py` file, we will include code for raising `NotInRange` error. Then run `pytest -v` for testing. 
+26 - In `test_config.py` file, we will include code for raising `NotInRange` error. Then run `pytest -v` for testing.
+
+27 - For testing cases, always start the function name with `test_` otherwise pytest library will not consider of taking the functions for testing.
