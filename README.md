@@ -170,3 +170,7 @@ python setup.py sdist bdist_wheel
 26 - In `test_config.py` file, we will include code for raising `NotInRange` error. Then run `pytest -v` for testing.
 
 27 - For testing cases, always start the function name with `test_` otherwise pytest library will not consider of taking the functions for testing.
+
+## Creating ML Web App
+
+28 - Create `template_web_app.py` and execute.
