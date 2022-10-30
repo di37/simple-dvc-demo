@@ -176,3 +176,5 @@ python setup.py sdist bdist_wheel
 28 - Create `template_web_app.py` and execute.
 
 29 - Basic Web Structure is added in the created files inside static and template folders residing in webapp folder.
+
+30 - Coding done for `app.py` and `prediction.py`.
