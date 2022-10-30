@@ -7,7 +7,8 @@ dirs = [
     "notebooks",
     "report",
     "saved_models",
-    "src"
+    "src",
+    "tests"
 ]
 
 for dir_ in dirs:
@@ -19,7 +20,10 @@ files = [
     "dvc.yaml",
     "params.yaml",
     ".gitignore",
-    os.path.join("src", "__init__.py")
+    os.path.join("src", "__init__.py"),
+    os.path.join("tests", "__init__.py"),
+    os.path.join("tests", "conftest.py"),
+    os.path.join("tests", "test_config.py"),
 ]
 
 for file_ in files:
