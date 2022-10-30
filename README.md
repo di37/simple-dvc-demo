@@ -162,4 +162,6 @@ Optional - To create a sharable distribution package.
 python setup.py sdist bdist_wheel
 ```
 
+25 - Certain cases are required to be handled. Therefore, `handle_cases.ipynb` is created. These all are solved at Exploratory Data Analysis stage. 
 
+26 - In `test_config.py` file, we will include code for raising `NotInRange` error. Then run `pytest -v` for testing. 
